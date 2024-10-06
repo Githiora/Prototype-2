@@ -11,3 +11,6 @@ UserSettings/
 
 # Include .meta files
 !*.meta
+
+# Ignore IDE specific files
+*.csproj
