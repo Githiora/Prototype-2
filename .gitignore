@@ -7,3 +7,7 @@ Prototype 2.sln
 [Bb]uilds/
 [Ll]ogs/
 UserSettings/
+
+
+# Include .meta files
+!*.meta
