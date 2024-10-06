@@ -1,11 +1,9 @@
-Library/Artifacts
-Library/Bee
-Library/PackageCache
-Library/ScriptAssemblies
 .plastic
 Prototype 2.sln
-Library/ShaderCache
-Library/Search
-Library/StateCache
-Temp
-Logs
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
