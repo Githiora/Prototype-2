@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TreeEditor;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -30,6 +31,12 @@ public class PlayerController : MonoBehaviour
         }
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            // Launch projectile from player
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
         
     }
 }
