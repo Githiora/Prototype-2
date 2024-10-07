@@ -528,7 +528,6 @@ MonoBehaviour:
   - {fileID: 513906253307187729, guid: 3e58d3cef9fd74765834cdd9fd16567d, type: 3}
   - {fileID: 5672734868342448052, guid: 1b3801bcc09c3482f8135336a0843fd8, type: 3}
   - {fileID: 770392284424409462, guid: f888e84765ed34c76ba892c0103225be, type: 3}
-  animalIndex: 0
 --- !u!4 &742526871
 Transform:
   m_ObjectHideFlags: 0
