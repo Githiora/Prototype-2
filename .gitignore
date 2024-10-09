@@ -14,3 +14,4 @@ UserSettings/
 
 # Ignore IDE specific files
 *.csproj
+.DS_Store
