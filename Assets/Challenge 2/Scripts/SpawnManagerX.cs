@@ -23,7 +23,7 @@ public class SpawnManagerX : MonoBehaviour
     void SpawnRandomBall ()
     {
         // Generate random ball index and random spawn position
-        Vector3 spawnPos = new Vector3(0, spawnPosY, 0);
+        Vector3 spawnPos = new Vector3(Random.Range(spawnLimitXLeft, spawnLimitXRight), spawnPosY, 0);
         int ballIndex = Random.Range(0, ballPrefabs.Length);
 
         // instantiate ball at random spawn location
