@@ -6,19 +6,23 @@ public class PlayerControllerX : MonoBehaviour
 {
     public GameObject dogPrefab;
 
-    private float timeInterval = 1.0f;
-    private float prevTime;
+    private float spwanCoolDown = 1.0f;
+
+    private float nextSpawnTime;
 
     // Update is called once per frame
     void Update()
     {
         // On spacebar press, send dog
-        if (Input.GetKeyDown(KeyCode.Space) && (prevTime == 0 || ((Time.time - prevTime) > timeInterval)))
+        if (Input.GetKeyDown(KeyCode.Space) && CanSpawnDog())
         {
-
-            prevTime = Time.time;
             Instantiate(dogPrefab, transform.position, dogPrefab.transform.rotation);
-
+            nextSpawnTime = Time.time + spwanCoolDown;
         }
+    }
+
+    private bool CanSpawnDog()
+    {
+        return Time.time >= nextSpawnTime;
     }
 }
